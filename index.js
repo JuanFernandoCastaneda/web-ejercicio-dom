@@ -67,7 +67,7 @@ async function loadEvents() {
     let arregloEventosCopia = copiarArreglo(arregloEventos);
 
     /* 
-    Registramos que el evento pasó ese día eliminándolo del arreglo y registramos si fue 
+    Registramos que el evento pasó ese día eliminándolo del arreglo copia y registramos si fue 
     un tp o un fn.
     */
     for(let j = 0; j < eventos.length; j++) {
@@ -82,7 +82,7 @@ async function loadEvents() {
     }
 
     /* 
-    Registramos si el evento fue un fp o un tn.
+    Registramos si los eventos que faltaron en el día son un fp o tn.
     */
     for(let j = 0; j < arregloEventosCopia.length; j++) {
       eventIndex = arregloEventos.indexOf(arregloEventosCopia[j]);
